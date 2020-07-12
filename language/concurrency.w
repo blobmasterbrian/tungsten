@@ -27,7 +27,7 @@
 // in a synchronous manner. In this case, the go keyword indicates that the called function
 // will be called (or better explained as 'scheduled' due to lazy evaluation) asynchronously
 // and return a future, rather than the normally expected return value. When you've built the
-// callback chain, you use the execute keyword to execute it.
+// callback chain, you simply call the top of the chain without the go keyword.
 
 // Let's take an example from Rust and translate it.
 async fn learn_song() -> Song { /* ... */ }
@@ -79,5 +79,6 @@ func ()async_main {
 }
 
 func ()main {
-  go execute ()async_main;
+  // There is no need to call await here because without the go keyword it is implicity implied.
+  ()async_main;
 }
