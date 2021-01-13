@@ -7,10 +7,16 @@
 // TODO The modulus operator: %
 // TODO The equivalence operator: ==
 // TODO The bitshift operators: << and >>
-// TODO The bitwise AND operator: &
-// TODO The bitwise OR operator: |
-// TODO The logical AND operator: &&
-// TODO The logical OR operator: ||
+
+// TODO AND/OR operators logical operators are much more common place for day to day programming
+// they will also be used for union type parameters and multiple return types, as such, simplifying
+// them to & and | will be much more readable. To differentiate with bitwise operators is simple,
+// just as 0b prefixes binary numbers in many languages, we use the same convention of adding b after
+// the operator in order to indicate it is a bitwise operator
+// TODO The logical AND operator: &
+// TODO The logical OR operator: |
+// TODO The bitwise AND operator: &b
+// TODO The bitwise OR operator: |b
 
 // TODO pointer operators: * symbols undetermined
 
